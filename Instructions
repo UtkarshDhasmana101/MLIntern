@@ -1,0 +1,28 @@
+Hello!
+
+I wasn't able to utilize Magic Leap inputs, as there is currently no way to use the simulator with MRTK3—and even MRTK2—anymore. I spent four days trying to set everything up, but as mentioned on the official website,
+the simulator only works with MLSDK versions lower than 2.0, whereas MRTK3 and MRTK both require SDK version 2.0 or higher.
+
+So, I’ve used MRTK3 inputs along with XR inputs to meet the objectives.
+
+Inputs:
+1. Start the game.
+2. In play mode:
+    - Use Left Shift for the left hand
+    - Use Spacebar for the right hand
+    - You can pinch on the Place Model button to spawn a football, which behaves with physics-based movement and falls to the ground.
+3. You can grab the football with either hand. Left Mouse Click simulates a pinch gesture.
+   - Use C to scale up the football and V to scale it down.
+   - Since the simulator does not support pinch input directly, true grab-interactable scaling via pinch isn’t possible—but this workaround does the job for now.
+4. Pressing P while holding either Left Shift or Spacebar and aiming the ray downward will spawn an anchor dummy, along with an arrow prefab, to simulate anchor placement and positioning.
+5. The canvas is world space meaning the button will follow the camera with some tweaks in the script.
+
+Why didn't I use the XR Simulator (which supports AR plane detection)?
+Because MRTK3 Input Simulator was the only way I could simulate hand gestures—albeit to a limited extent. While XR Simulator does support plane detection (a core AR feature), 
+it doesn’t support hand gestures. So, I chose the most suitable option and worked around the limitations using a basic plane prefab.
+
+P.S. Play the game in full-screen mode, otherwise the Restart button may not be visible.
+I've attached a video demonstration of the work as well 
+
+Thank You!
+
