@@ -35,7 +35,6 @@ public class ScalableModel : MonoBehaviour
 
         initialScale = transform.localScale;
 
-        // Basic Rigidbody setup for physics + smooth grab
         rb.useGravity = true;
         rb.isKinematic = false;
         rb.interpolation = RigidbodyInterpolation.Interpolate;
