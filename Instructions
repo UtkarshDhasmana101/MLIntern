@@ -12,8 +12,8 @@ Inputs:
     - Use Spacebar for the right hand
     - You can pinch on the Place Model button to spawn a football, which behaves with physics-based movement and falls to the ground.
 3. You can grab the football with either hand. Left Mouse Click simulates a pinch gesture.
-   - Use C to scale up the football and V to scale it down.
-   - Since the simulator does not support pinch input directly, true grab-interactable scaling via pinch isn’t possible—but this workaround does the job for now.
+   - Use C to scale up the football and V to scale it down or use left mouse click with spacebar pressed. 
+   - Since the simulator does not support pinch input directly, true grab-interactable scaling via pinch isn’t possible—but this workaround does the job for now. Code does support scaling but only for headsets.
 4. Pressing P while holding either Left Shift or Spacebar and aiming the ray downward will spawn an anchor dummy, along with an arrow prefab, to simulate anchor placement and positioning.
 5. The canvas is world space meaning the button will follow the camera with some tweaks in the script.
 
