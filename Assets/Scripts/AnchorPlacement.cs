@@ -22,7 +22,7 @@ public class AnchorSystem : MonoBehaviour
     public Button[] placeModelButtons;
 
     [Header("XR References")]
-    public XRRayInteractor rayInteractor;  // Assign this in Inspector!
+    public XRRayInteractor rayInteractor;  
 
     private Camera xrCamera;
     private GameObject currentModel;
